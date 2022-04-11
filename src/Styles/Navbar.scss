@@ -73,11 +73,13 @@ $accent-green: #28b097;
 
   .navbar {
     margin: auto;
+    justify-content: space-between;
 
     .nav-link {
 
       padding: 2em 1em;
       font-size: 1.1rem;
+      border-right: 1px solid transparent;
 
         &:hover {
 

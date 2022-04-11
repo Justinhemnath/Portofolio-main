@@ -66,10 +66,14 @@
 @media screen and (max-width: 600px) {
   .navbar {
     margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .navbar .nav-link {
     padding: 2em 1em;
     font-size: 1.1rem;
+    border-right: 1px solid transparent;
   }
   .navbar .nav-link:hover {
     padding: 2em 1em;
