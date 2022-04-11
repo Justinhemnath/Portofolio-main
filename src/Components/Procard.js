@@ -9,7 +9,7 @@ const Projectcard = (props) => {
         {props.name}
       </a>
 
-      <a href={props.gitlink} className="code-btn">
+      <a href={props.gitlink} target="_blank" className="code-btn">
         SOURCE CODE
         <span>
           <i className="fa-brands fa-github"></i>
