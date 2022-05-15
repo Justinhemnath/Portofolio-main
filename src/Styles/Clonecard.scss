@@ -16,7 +16,7 @@ $background-grey: #1C2027;
   transition: transform 0.3s linear;
 
   &:hover {
-    transform: translate(0, -10px);
+    transform: scale(1.05, 1.05);
   }
 
   .card-name {

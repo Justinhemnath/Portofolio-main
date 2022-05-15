@@ -18,8 +18,8 @@
 }
 
 .pro-card:hover {
-  -webkit-transform: translate(0, -10px);
-          transform: translate(0, -10px);
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 .pro-card .card-name {
