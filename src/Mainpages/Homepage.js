@@ -5,13 +5,16 @@ import Skills from "./Skills";
 import { motion } from "framer-motion";
 
 const Homepage = () => {
+
   return (
+
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       className="homepage"
     >
+
       <div className="section-one">
 
         <div className="about">
@@ -32,7 +35,7 @@ const Homepage = () => {
                 className="fa-solid fa-angles-right fa-beat"
                 style={{ marginRight: "20px" }}
               ></i>
-              This portofolio is powered by React Js, SASS and Framer
+              This portfolio is powered by React Js, SASS and Framer
               motion. Scroll down to view more information.
             </p>
 
@@ -50,7 +53,7 @@ const Homepage = () => {
                 className="fa-solid fa-angles-right fa-beat"
                 style={{ marginRight: "20px" }}
               ></i>
-              This portofolio is also responsive. 
+              This portfolio is also responsive. 
               Resize the window to see the effects.
             </p>
 
@@ -61,6 +64,14 @@ const Homepage = () => {
         <Skills className="skills" />
       
       </div>
+
+
+
+
+
+
+
+
 
       <div className="section-two">
 
@@ -102,7 +113,12 @@ const Homepage = () => {
              engineering by becoming a <b>MERN</b> stack  
              developer (<b>M</b>ongoDB, <b>E</b>xpressJs, <b>R</b>eactJs, <b>N</b>odeJs). 
           </p>
+
         </div>
+
+
+
+
 
         <div className="personal-info">
           <h1>Resume</h1>
@@ -193,7 +209,9 @@ const Homepage = () => {
       </div>
       
     </motion.div>
+
   );
+  
 };
 
 export default Homepage;
