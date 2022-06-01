@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/Projectspage.css";
+import { jsprojects, reactprojects, cloneprojects } from '../Components/ProjectsArray';
 import Procard from "../Components/Procard";
 import Clonecard from "../Components/Clonecard";
 import Reactcard from "../Components/Reactcard";
@@ -7,87 +8,13 @@ import { motion } from "framer-motion";
 
 
 const Projectspage = () => {
-
-                                                /* JAVASCRIPT PROJECTS */
-
-  let jsprojects = [
-  {
-    name: "RESPONSIVE SIDEBAR",
-    location: "/Projects/Toggleable_Sidebar.html",
-    git: "https://github.com/Justinhemnath/Portofolio-main/blob/master/public/Projects/Toggleable_Sidebar.html"
-  },
-
-  {
-    name: "SIMPLE COUNTER", 
-    location: "/Projects/Counter.html", 
-    git: "https://github.com/Justinhemnath/Portofolio-main/blob/master/public/Projects/Counter.html"
-  },
-  
-  {
-    name: "MODAL", 
-    location: "/Projects/Modal.html", 
-    git: "https://github.com/Justinhemnath/Portofolio-main/blob/master/public/Projects/Modal.html"
-  },
-  
-  {
-    name: "RESPONSIVE TOGGLEABLE NAVBAR", 
-    location: "/Projects/Resp_toggleable_navbar.html", 
-    git: "https://github.com/Justinhemnath/Portofolio-main/blob/master/public/Projects/Resp_toggleable_navbar.html"
-  },
-  
-  {
-    name: "TABS", 
-    location: "/Projects/Tabs.html", 
-    git: "https://github.com/Justinhemnath/Portofolio-main/blob/master/public/Projects/Tabs.html"
-  },
-  
-  {
-    name: "TODO LIST", 
-    location: "/Projects/TODO.html", 
-    git: "https://github.com/Justinhemnath/Portofolio-main/blob/master/public/Projects/TODO.html"
-  }
-];
-
-  
-
-
-
-                                                  /* REACT PROJECTS */
-
-  let reactprojects = [
-  {
-    name: "SIMPLE COUNTER USING useState HOOK ",
-    location: "/projectspage/counter",
-    git: "https://github.com/Justinhemnath/Portofolio-main/tree/master/src/Components/React_Projects/Counter"
-  }
-];
-
-
-
-
-  
-                                                      /* CLONES */
-
-  const cloneprojects = [
-  {
-    name: "MSI Motherboards",
-    clonelink: "./Clonedsites/MSI_site/Msiwebpage.html",
-    mainlink: "https://www.msi.com/Motherboard/B450M-PRO-VDH-PLUS/",
-    gitlink:
-      "https://github.com/Justinhemnath/Portofolio-main/tree/master/public/Clonedsites/MSI_site"
-  }
-];
-
-
-
-
  
                                             /* Map functions to make list */
 
   let jsprojectsarray = jsprojects.map(
-
+    
     obj => <Procard key={obj.name} name={obj.name} location={obj.location} gitlink={obj.git} />
-     
+    
   );
 
 
@@ -117,7 +44,7 @@ const Projectspage = () => {
       className="projects-page"
     >
 
-
+                                  {/* RESPONSIVE HTML/JAVASCRIPT PROJECTS */}
 
       <div className="heading">
 
@@ -142,7 +69,7 @@ const Projectspage = () => {
 
 
 
-
+                                            {/* REACT PROJECTS */}
 
       <div className="heading">
 
@@ -168,11 +95,7 @@ const Projectspage = () => {
 
 
 
-
-
-
-
-
+                                                      {/* CLONES */}
       
 
       <div className="heading">
@@ -196,5 +119,7 @@ const Projectspage = () => {
   );
 
 };
+
+
 
 export default Projectspage;
