@@ -4,16 +4,6 @@ body {
   background-color: #1C2027;
 }
 
-@font-face {
-  font-family: Optima;
-  src: url(./fonts/OPTIMA.woff);
-}
-
-@font-face {
-  font-family: Optima-B;
-  src: url(./fonts/OPTIMA_B.woff);
-  font-weight: bold;
-}
 
 @font-face {
   font-family: SlateBold;
@@ -24,11 +14,6 @@ body {
 @font-face {
   font-family: Slate;
   src: url(./fonts/SlateReg.TTF);
-}
-@font-face {
-  font-family: SlateBoldCn;
-  src: url(./fonts/SlateBoldCn.TTF);
-  font-weight: bold;
 }
 
 @font-face {

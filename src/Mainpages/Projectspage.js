@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/Projectspage.css";
-import { jsprojects, reactprojects, cloneprojects } from '../Components/ProjectsArray';
+import { jsprojects, reactprojects, cloneprojects } from './ProjectsArray';
 import Procard from "../Components/Procard";
 import Clonecard from "../Components/Clonecard";
 import Reactcard from "../Components/Reactcard";

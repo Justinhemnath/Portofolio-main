@@ -5,6 +5,8 @@ import Homepage from "./Homepage";
 import Projectspage from "./Projectspage";
 import Contact from "./Contact";
 import Counter from "../Components/React_Projects/Counter/Counter.js";
+import Menu from "../Components/React_Projects/Food-Menu/Menu.js";
+
 
 
 const Animated = () => {
@@ -23,6 +25,7 @@ const Animated = () => {
         <Route exact path="/projectspage" component={Projectspage} />
         <Route path="/contact" component={Contact} />
         <Route path="/projectspage/counter" component={Counter} />
+        <Route path="/projectspage/foodmenu" component={Menu} />
       </Switch>
     </motion.div>
   );

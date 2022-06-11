@@ -1,12 +1,13 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import "../Styles/Navbar.css";
-{
-  /* <i class="fa-solid fa-bars"></i>; */
-}
+
 const Navbar = () => {
+
   return (
+
     <div className="navbar">
+      
         <NavLink to="/home" 
         className="nav-link"
         activeClassName="active-link">
@@ -28,8 +29,11 @@ const Navbar = () => {
         >
           CONTACT ME
         </NavLink>
+
     </div>
+
   );
+
 };
 
 export default Navbar;
