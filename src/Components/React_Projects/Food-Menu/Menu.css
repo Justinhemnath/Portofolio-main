@@ -29,7 +29,7 @@
     justify-content: center;
 }
 
-button {
+.buttons > button {
     background-color: rgb(223, 223, 223);
     border: 0px none;
     border-radius: 5px;
@@ -40,7 +40,7 @@ button {
     padding: 0.2em 1em;
 }
 
-button:hover {
+.buttons > button:hover {
     background-color: rgb(195, 70, 51);
     color: white;
     transition: all 0.3s;

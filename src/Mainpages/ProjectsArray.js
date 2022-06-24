@@ -1,3 +1,27 @@
+                                           /* REACT PROJECTS */
+
+export const reactprojects = [
+
+  {
+    name: "SHOPPING LIST",
+    location: "/projectspage/shoplist",
+    git: "https://github.com/Justinhemnath/Portofolio-main/tree/master/src/Components/React_Projects/Shopping-List"
+  },
+
+  {
+    name: "FOOD MENU",
+    location: "/projectspage/foodmenu",
+    git: "https://github.com/Justinhemnath/Portofolio-main/tree/master/src/Components/React_Projects/Food-Menu"
+  },
+
+  {
+    name: "SIMPLE COUNTER USING useState HOOK ",
+    location: "/projectspage/counter",
+    git: "https://github.com/Justinhemnath/Portofolio-main/tree/master/src/Components/React_Projects/Counter"
+  }
+
+];
+
 
                                      /* JAVASCRIPT PROJECTS */
 
@@ -40,29 +64,6 @@ export const jsprojects = [
     }
 
   ];
-
-
-
-
-                                           /* REACT PROJECTS */
-
-
-export const reactprojects = [
-
-    {
-      name: "FOOD MENU",
-      location: "/projectspage/foodmenu",
-      git: "https://github.com/Justinhemnath/Portofolio-main/tree/master/src/Components/React_Projects/Food-Menu"
-    },
-
-    {
-      name: "SIMPLE COUNTER USING useState HOOK ",
-      location: "/projectspage/counter",
-      git: "https://github.com/Justinhemnath/Portofolio-main/tree/master/src/Components/React_Projects/Counter"
-    }
-
-  ];
-
 
 
 

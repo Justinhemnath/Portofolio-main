@@ -11,19 +11,22 @@ const Projectspage = () => {
  
                                             /* Map functions to make list */
 
+  
+  let reactjsarray = reactprojects.map(
+
+    obj => <Reactcard key={obj.name} name={obj.name} location={obj.location} gitlink={obj.git} />
+
+  );
+
+
+
+
   let jsprojectsarray = jsprojects.map(
     
     obj => <Procard key={obj.name} name={obj.name} location={obj.location} gitlink={obj.git} />
     
   );
 
-
-
-  let reactjsarray = reactprojects.map(
-
-    obj => <Reactcard key={obj.name} name={obj.name} location={obj.location} gitlink={obj.git} />
-
-  );
 
 
 
@@ -43,6 +46,35 @@ const Projectspage = () => {
       exit={{ opacity: 0 }}
       className="projects-page"
     >
+
+
+
+                                                  {/* REACT PROJECTS */}
+
+
+      <div className="heading">
+
+        <p>REACT PROJECTS:</p>
+
+        <i className="fa-solid fa-cog fa-spin"></i>
+
+        <p>More projects underway</p>
+
+      </div>
+
+
+
+      <div className="projects">
+
+        {reactjsarray}
+
+      </div>
+
+
+
+
+
+
 
                                   {/* RESPONSIVE HTML/JAVASCRIPT PROJECTS */}
 
@@ -65,32 +97,6 @@ const Projectspage = () => {
         {jsprojectsarray}
 
       </div>
-
-
-
-
-                                            {/* REACT PROJECTS */}
-
-      <div className="heading">
-
-        <p>REACT PROJECTS:</p>
-
-        <i className="fa-solid fa-cog fa-spin"></i>
-
-        <p>More projects underway</p>
-
-      </div>
-
-
-
-      <div className="projects">
-
-        {reactjsarray}
-
-      </div>
-
-
-
 
 
 
