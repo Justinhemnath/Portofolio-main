@@ -1,13 +1,27 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import './ShopList.css'
 import Alert from './Alert'
 import List from './List'
+
+
+const getLocalStorage = () => {
+
+  let newlist = localStorage.getItem('list');
+  
+  if (newlist) {
+    return (newlist = JSON.parse(localStorage.getItem('list')));
+  } else {
+    return [];
+  }
+
+};
+
 
 const ShopList = () => {
 
   const [ alert, setAlert ] = useState({ show: false, message: '', type: '' })
   const [ name, setName ] = useState("")
-  const [ list, setList ] = useState([])
+  const [ list, setList ] = useState(getLocalStorage())
   const [ editing, setEditing ] = useState(false)
 
   const inputfield = useRef()
@@ -46,11 +60,20 @@ const ShopList = () => {
     setList(list.filter((item) => item.id !== id));
   };
 
+  useEffect(() => {
+
+    localStorage.setItem('list', JSON.stringify(list));
+    
+  }, [list]);
+
   return (
   
     <div className="ShopList">
 
-      
+      <div className="shoplist-info">
+        Add and remove items to the list. The app makes use of the browser's localstorage and 
+        hence data entered is never lost until removed from the list.
+      </div>
 
       <div className="List-card">
 
