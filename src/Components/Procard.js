@@ -5,9 +5,7 @@ const Projectcard = (props) => {
   return (
     <div className="pro-card">
       
-      <a href={props.location} target="_blank" className="card-name">
-        {props.name}
-      </a>
+      {props.children}
 
       <a href={props.gitlink} target="_blank" className="code-btn">
         SOURCE CODE

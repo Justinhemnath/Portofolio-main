@@ -3,7 +3,7 @@ import "../Styles/Projectspage.css";
 import { jsprojects, reactprojects, cloneprojects } from './ProjectsArray';
 import Procard from "../Components/Procard";
 import Clonecard from "../Components/Clonecard";
-import Reactcard from "../Components/Reactcard";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 
@@ -14,7 +14,18 @@ const Projectspage = () => {
   
   let reactjsarray = reactprojects.map(
 
-    obj => <Reactcard key={obj.name} name={obj.name} location={obj.location} gitlink={obj.git} />
+    obj => 
+    
+
+    <Procard key={obj.name} gitlink={obj.git}>
+    
+      <Link to={obj.location} className="card-name">
+
+        {obj.name}
+
+      </Link>
+
+    </Procard>
 
   );
 
@@ -23,8 +34,18 @@ const Projectspage = () => {
 
   let jsprojectsarray = jsprojects.map(
     
-    obj => <Procard key={obj.name} name={obj.name} location={obj.location} gitlink={obj.git} />
+    obj =>
     
+    <Procard key={obj.name} gitlink={obj.git}>
+    
+      <a href={obj.location} target="_blank" className="card-name">
+
+        {obj.name}
+
+      </a>
+
+    </Procard>
+
   );
 
 

@@ -13,7 +13,7 @@
 
     width: 7em;
     margin: 0.8em auto;
-    color:white;
+    color: black;
     font-size: 8rem;
 
 }
@@ -40,8 +40,8 @@
 
 .counter .decrease:hover, .counter .increase:hover {
 
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 
 }
 
@@ -59,15 +59,15 @@
     background-color: rgb(252, 5, 5);
     color: black;  
     border: 1px solid transparent;
-    transition: background-color 0.5s;
+    transition: all 0.5s;
     cursor: pointer;
 
 }
 
 .counter .reset:hover {
 
-    background-color: white;
-    color: black; 
+    background-color: black;
+    color: white; 
 
 }
 
