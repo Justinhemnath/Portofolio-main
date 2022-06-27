@@ -16,7 +16,7 @@ $ashen: rgb(226, 225, 225);
     flex-direction: row;
     justify-content: space-between;
     line-height: 1.6;
-    color: rgb(226, 225, 225);
+    color: black;
 
     .about {
 
@@ -77,7 +77,7 @@ $ashen: rgb(226, 225, 225);
 
     .aboutme {
 
-      background-color: rgb(226, 225, 225);
+      background-color: rgb(244, 244, 244);
       border: 1px solid transparent;
       border-radius: 10px;
       box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
@@ -113,14 +113,15 @@ $ashen: rgb(226, 225, 225);
       font-size: 4rem;
       text-decoration: underline $accent-green;
       font-family: SlateBold;
-      color:white;
+      color: black;
+      ;
       
     }
     
 
     .personal-info-section {
 
-      background-color: rgb(226, 225, 225);
+      background-color: rgb(244, 244, 244);
       padding: 50px;
       font-family: 'DM sans';
       border-radius: 10px;
