@@ -2,16 +2,18 @@
 
 export const reactprojects = [
 
-  {
-    name: "SHOPPING LIST",
-    location: "/projectspage/shoplist",
-    git: "https://github.com/Justinhemnath/Portofolio-main/tree/master/src/Components/React_Projects/Shopping-List"
-  },
 
   {
     name: "FOOD MENU",
     location: "/projectspage/foodmenu",
     git: "https://github.com/Justinhemnath/Portofolio-main/tree/master/src/Components/React_Projects/Food-Menu"
+  },
+
+  
+  {
+    name: "SHOPPING LIST",
+    location: "/projectspage/shoplist",
+    git: "https://github.com/Justinhemnath/Portofolio-main/tree/master/src/Components/React_Projects/Shopping-List"
   },
 
   {
