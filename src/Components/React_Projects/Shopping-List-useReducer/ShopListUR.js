@@ -1,5 +1,4 @@
 import React, { useState, useReducer } from "react";
-import './ShopListUR.css'
 import Alert from './Alert'
 import { SLStyle, formStyle, buttonStyle, divStyle, listStyle, alertStyle } from './Styles' 
 
@@ -55,9 +54,6 @@ function ShopListUR() {
     }
   }
 
-  const closeModal = () => {
-    dispatch({ type: 'CLOSE_MODAL' })
-  }
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -86,9 +82,9 @@ function ShopListUR() {
     }
   }
 
-
-
-
+  const closeModal = () => {
+    dispatch({ type: 'CLOSE_MODAL' })
+  }
 
 
   return (
