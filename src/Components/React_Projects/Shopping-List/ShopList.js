@@ -22,13 +22,13 @@ const ShopList = () => {
   const [ alert, setAlert ] = useState({ show: false, message: '', type: '' })
   const [ name, setName ] = useState("")
   const [ list, setList ] = useState(getLocalStorage())
-  const [ editing, setEditing ] = useState(false)
 
   const inputfield = useRef()
 
 
-  const handleSubmit = () => {
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
     if (!name) {
 
       alerter(true, 'Enter An Item', 'danger')
@@ -63,7 +63,7 @@ const ShopList = () => {
   useEffect(() => {
 
     localStorage.setItem('list', JSON.stringify(list));
-    
+
   }, [list]);
 
   return (
@@ -84,21 +84,19 @@ const ShopList = () => {
           {alert.show && <Alert alert={alert} list={list} removeAlert={alerter} />}
         </div>
 
-        <div className="topPart">
 
+            <form onSubmit={handleSubmit}  className="topPart">
+              <input 
+                type="text" 
+                className="shoplist-input"
+                placeholder="Enter items" 
+                onChange={(e) => setName(e.target.value)} 
+                ref={inputfield} />
 
-            <input 
-              type="text" 
-              className="shoplist-input"
-              placeholder="Enter items" 
-              onChange={(e) => setName(e.target.value)} 
-              ref={inputfield} />
-
-            <button className="shoplist-submit-btn" onClick={handleSubmit}>
-              {editing ? "Editing" : "Submit"}
-            </button>
-
-        </div>
+              <button className="shoplist-submit-btn" onClick={handleSubmit}>
+                Submit
+              </button>
+            </form>
 
         <List list={list} removeItem={removeItem} />
         
