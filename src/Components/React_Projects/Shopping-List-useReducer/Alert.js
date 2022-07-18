@@ -15,10 +15,14 @@ import React, { useEffect } from 'react'
     <div style={{
         width: '30em',
         margin: 'auto',
+        marginBottom: 30,
         textAlign: 'center',
+        letterSpacing: 2,
+        fontSize: '1.2rem',
+        fontWeight: 'bold',
         border: `1px solid ${type}`,
         backgroundColor: type === 'red' ? 'rgb(255, 192, 192)' : 'rgb(192, 255, 217)',
-        color: type,   
+        color: type,  
       }}>
 
 

@@ -1,6 +1,6 @@
 import React, { useState, useReducer } from "react";
 import Alert from './Alert'
-import { SLStyle, formStyle, buttonStyle, divStyle, listStyle, alertStyle } from './Styles' 
+import { SLStyle, formStyle, SLHeader, SLUnderline, inputStyle, buttonStyle, divStyle, listStyle, alertStyle } from './Styles' 
 
 
 const initialState = {
@@ -41,6 +41,15 @@ function ShopListUR() {
       return {
         ...state, 
         show: false
+      }
+
+      case 'CLEAR_ALL': 
+      return {
+        ...state,
+        people: [],
+        show: true,
+        type: 'green',
+        message: 'List Cleared'
       }
 
       case 'NO_ITEM': 
@@ -90,14 +99,22 @@ function ShopListUR() {
   return (
     <div style={SLStyle}>
 
+      <h1 style={SLHeader}>SHOPPING LIST USING useReducer HOOK</h1>
+      <div style={SLUnderline}></div>
+
+
+      
       {state.show && <Alert message={state.message} type={state.type} closeModal={closeModal} />}
 
 
+
       <form onSubmit={handleSubmit} style={formStyle}>
-        <input type='text' value={name} onChange={(e) => setName(e.target.value)} />
-        <button style={buttonStyle} onClick={handleSubmit}>
-          Submit
-        </button>
+        
+        <input type='text' value={name} style={inputStyle} onChange={(e) => setName(e.target.value)} />
+        
+        <input type='button' value='Submit' style={buttonStyle} onClick={handleSubmit} />
+        <input type='button' value='Clear All' style={buttonStyle} onClick={() => dispatch({ type: 'CLEAR_ALL' }) } />
+          
       </form>
 
       <div style={divStyle}>
