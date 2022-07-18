@@ -11,9 +11,15 @@ export const reactprojects = [
 
   
   {
-    name: "SHOPPING LIST",
+    name: "SHOPPING LIST (useState)",
     location: "/projectspage/shoplist",
     git: "https://github.com/Justinhemnath/Portofolio-main/tree/master/src/Components/React_Projects/Shopping-List"
+  },
+
+  {
+    name: "SHOPPING LIST (useReducer)",
+    location: "/projectspage/shoplistUR",
+    git: "https://github.com/Justinhemnath/Portofolio-main/tree/master/src/Components/React_Projects/Shopping-List-useReducer"
   },
 
   {

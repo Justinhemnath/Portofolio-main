@@ -7,6 +7,8 @@ import Contact from "./Contact";
 import Counter from "../Components/React_Projects/Counter/Counter.js";
 import Menu from "../Components/React_Projects/Food-Menu/Menu.js";
 import ShopList from "../Components/React_Projects/Shopping-List/ShopList.js";
+import ShopListUR from "../Components/React_Projects/Shopping-List-useReducer/ShopListUR.js";
+
 
 
 
@@ -28,6 +30,7 @@ const Animated = () => {
         <Route path="/projectspage/counter" component={Counter} />
         <Route path="/projectspage/foodmenu" component={Menu} />
         <Route path="/projectspage/shoplist" component={ShopList} />
+        <Route path="/projectspage/shoplistUR" component={ShopListUR} />
       </Switch>
     </motion.div>
   );
