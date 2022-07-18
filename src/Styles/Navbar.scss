@@ -19,6 +19,7 @@ $accent-green: #28b097;
       padding: 4vh 2vw;
       text-decoration: none;
       color: black;
+      letter-spacing: 4px;
       background-color: $accent-green;
       border-right: 1px solid black;
 
@@ -73,20 +74,23 @@ $accent-green: #28b097;
 
   .navbar {
     margin: auto;
-    justify-content: space-between;
 
     .nav-link {
 
-      padding: 2em 1em;
-      font-size: 1.1rem;
+      padding: 2em 2vw;
+      font-size: 0.9rem;
+      letter-spacing: 4px;
+      text-align: center;
       border-right: 1px solid transparent;
+      flex: 33%;
 
         &:hover {
 
-          padding: 2em 1em;
+          padding: 2em 2vw;
 
         }
     }
+
 
     .house-icon {
 
