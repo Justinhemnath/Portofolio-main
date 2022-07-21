@@ -1,11 +1,8 @@
 .contact {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10% 30%;
-    gap: 8em;
+    width: 40%;
+    margin: auto;
+    padding: 5em 0;
 
 }
 
@@ -14,11 +11,11 @@
     display: flex;
     align-items: center;
     font-family: 'Open sans';
-    font-size: 2.5rem;
-    letter-spacing: 4px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
     color: black;
-    margin-right: auto;
-
+    margin-bottom: 4em;
+    
 }
 
 .contactdiv p, .contactdiv a {
@@ -53,14 +50,16 @@
     
     .contact {
 
-        padding: 30%;
-        gap: 5em;
+        width: 60%;
+        margin: auto;
+        padding: 5em 2em;
 
     }
     
     .contactdiv {
 
         font-size: 1.4rem;
+        margin-bottom: 4em;
 
     }
 
@@ -77,15 +76,16 @@
 
     .contact {
 
-        padding: 30% 10%;
-        gap: 2.5em;
+        width: 90%;
+        margin: auto;
+        padding: 5em 2em;
 
     }
     
     .contactdiv {
 
-        font-size: 1rem;
-        letter-spacing: 1.8px;
+        font-size: 1.1rem;
+        margin-bottom: 4em;
 
     }
 
