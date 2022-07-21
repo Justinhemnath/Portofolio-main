@@ -53,7 +53,13 @@ const Projectspage = () => {
 
   let clonesarray = cloneprojects.map(
 
-    obj => <Clonecard key={obj.name} name={obj.name} clone={obj.clonelink} main={obj.mainlink} git={obj.gitlink} />
+    obj => <Clonecard 
+              key={obj.name} 
+              name={obj.name} 
+              clone={obj.clonelink} 
+              main={obj.mainlink} 
+              git={obj.gitlink} 
+            />
 
   );
 

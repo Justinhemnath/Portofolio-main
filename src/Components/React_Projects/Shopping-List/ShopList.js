@@ -6,10 +6,10 @@ import List from './List'
 
 const getLocalStorage = () => {
 
-  let newlist = localStorage.getItem('list');
+  let newlist = sessionStorage.getItem('list');
   
   if (newlist) {
-    return (newlist = JSON.parse(localStorage.getItem('list')));
+    return (newlist = JSON.parse(sessionStorage.getItem('list')));
   } else {
     return [];
   }
@@ -62,18 +62,13 @@ const ShopList = () => {
 
   useEffect(() => {
 
-    localStorage.setItem('list', JSON.stringify(list));
+    sessionStorage.setItem('list', JSON.stringify(list));
 
   }, [list]);
 
   return (
   
     <div className="ShopList">
-
-      <div className="shoplist-info">
-        Add and remove items to the list. The app makes use of the browser's localstorage and 
-        hence data entered is never lost until removed from the list.
-      </div>
 
       <div className="List-card">
 
