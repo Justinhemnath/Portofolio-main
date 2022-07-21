@@ -11,7 +11,7 @@ export const reactprojects = [
   {
     name: "SHOPPING LIST USING REDUX",
     location: "/projectspage/shoplist",
-    git: "https://github.com/Justinhemnath/Portfolio-main/tree/master/src/Components/React_Projects/Shopping-List"
+    git: "https://github.com/Justinhemnath/Portfolio-main/tree/master/src/Components/React_Projects/Shopping-List-Redux"
   },
 
   {
