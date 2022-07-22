@@ -21,12 +21,12 @@ const Homepage = () => {
 
           <div className="sideline"></div>
 
-          <p className="hello">Hello...</p>
+            <p className="hello">Hello...</p>
 
-          <p className="intro">
-            My name is Hemnath Balasubramanian and 
-            I am a fresher React Js developer from Chennai.
-          </p>
+            <p className="intro">
+              My name is Hemnath Balasubramanian and 
+              I am a fresher React Js developer from Chennai.
+            </p>
 
           <div className="extra">
 
@@ -171,13 +171,13 @@ const Homepage = () => {
                 <p>Technical skills</p> 
                 <ul>
                   <li><p>React Js</p></li>
+                  <li><p>React Redux</p></li>
                   <li><p>Javascript</p></li>
                   <li><p>HTML</p></li>
                   <li><p>CSS</p></li>
                   <li><p>Sass</p></li>
                   <li><p>Bootstrap (familiar)</p></li>
                   <li><p>Java (light exposure)</p></li>
-                  <li><p>Python  (light exposure)</p></li>
                 </ul>
               </div>
 
@@ -195,7 +195,6 @@ const Homepage = () => {
               <div className="info-item">
                 <p>Currently learning</p>
                 <ul>
-                  <li><p>React Redux</p></li>
                   <li><p>React hooks in detail</p></li>
                   <li><p>Mastering Javascript</p></li>
                   <li><p>Thinking in react</p></li>

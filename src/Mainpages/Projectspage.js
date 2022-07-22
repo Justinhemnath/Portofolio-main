@@ -83,9 +83,11 @@ const Projectspage = () => {
 
         <p>REACT PROJECTS:</p>
 
-        <i className="fa-solid fa-cog fa-spin"></i>
+        <div className="heading-alert">
 
-        <p>More projects underway</p>
+          <p><i className="fa-solid fa-cog fa-spin"></i>More projects underway</p>
+        
+        </div>
 
       </div>
 
@@ -109,9 +111,11 @@ const Projectspage = () => {
 
         <p>RESPONSIVE HTML/JAVASCRIPT PROJECTS:</p>
 
-        <i className="fa-solid fa-cog fa-spin"></i>
+        <div className="heading-alert">
 
-        <p>More projects underway</p>
+          <p><i className="fa-solid fa-cog fa-spin"></i>More projects underway</p>
+        
+        </div>
 
       </div>
 
@@ -134,10 +138,6 @@ const Projectspage = () => {
       <div className="heading">
 
         <p>CLONES:</p>
-
-        <i className="fa-solid fa-cog fa-spin"></i>
-
-        <p>More projects underway</p>
 
       </div>
 
