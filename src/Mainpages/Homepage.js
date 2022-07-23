@@ -1,6 +1,5 @@
 import React from "react";
 import "../Styles/Homepage.css";
-import "../App.css";
 import Skills from "./Skills";
 import { motion } from "framer-motion";
 

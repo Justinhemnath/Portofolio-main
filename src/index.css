@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+  }
+  
+  
+  @font-face {
+    font-family: SlateBold;
+    src: url(./fonts/SlateBold.woff2);
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: Slate;
+    src: url(./fonts/SlateReg.woff2);
+  }
+  
+  @font-face {
+    font-family: SlateBook;
+    src: url(./fonts/SlateBook.woff2);
+  }
+  

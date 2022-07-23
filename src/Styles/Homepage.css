@@ -48,7 +48,7 @@
 }
 
 .homepage .section-one .about .hello, .homepage .section-one .about .intro {
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
 }
 
 .homepage .section-one .extra {
@@ -60,7 +60,7 @@
 .homepage .section-one .extra p {
   font-size: 1.8rem;
   font-family: Slate;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 .homepage .section-two {
@@ -76,6 +76,8 @@
 
 .homepage .section-two .aboutme {
   background-color: #f4f4f4;
+  width: 60em;
+  margin: auto;
   border: 1px solid transparent;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(48, 168, 132, 0.75);
@@ -90,6 +92,7 @@
   font-family: SlateBold;
   -webkit-text-decoration: underline #28b097;
           text-decoration: underline #28b097;
+  letter-spacing: 1.5px;
 }
 
 .homepage .section-two .aboutme p {
@@ -109,10 +112,13 @@
           text-decoration: underline #28b097;
   font-family: SlateBold;
   color: black;
+  letter-spacing: 10px;
 }
 
 .homepage .section-two .personal-info .personal-info-section {
   background-color: #f4f4f4;
+  width: 50em;
+  margin: auto;
   padding: 50px;
   font-family: 'DM sans';
   border-radius: 10px;
@@ -200,6 +206,8 @@
   .homepage .section-two .aboutme {
     padding: 10px 60px;
     line-height: 1.6;
+    width: 30em;
+    margin: auto;
   }
   .homepage .section-two .aboutme p {
     text-indent: 50px;
@@ -210,6 +218,10 @@
   }
   .homepage .section-two .personal-info h1 {
     font-size: 2.5rem;
+  }
+  .homepage .section-two .personal-info .personal-info-section {
+    width: 30em;
+    margin: auto;
   }
   .homepage .section-two .personal-info .personal-info-section .info-item {
     -webkit-box-align: center;
@@ -278,9 +290,12 @@
   .homepage .section-two .aboutme {
     padding: 10px 30px;
     line-height: 1.6;
+    width: 18em;
+    margin: auto;
   }
   .homepage .section-two .aboutme h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
   }
   .homepage .section-two .aboutme p {
     text-indent: 10px;
@@ -294,6 +309,8 @@
   }
   .homepage .section-two .personal-info .personal-info-section {
     padding: 10px;
+    width: 20em;
+    margin: auto;
   }
   .homepage .section-two .personal-info .personal-info-section .info-item {
     display: -webkit-box;
