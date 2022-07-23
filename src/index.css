@@ -3,8 +3,13 @@ body {
     padding: 0;
     background-color: whitesmoke;
   }
-  
-  
+
+  @font-face {
+    font-family: InterExtraBold;
+    src: url(./fonts/InterExtraBold.woff2);
+    font-weight: bold;
+  }
+
   @font-face {
     font-family: SlateBold;
     src: url(./fonts/SlateBold.woff2);
@@ -14,6 +19,11 @@ body {
   @font-face {
     font-family: Slate;
     src: url(./fonts/SlateReg.woff2);
+  }
+
+  @font-face {
+    font-family: InterReg;
+    src: url(./fonts/InterReg.woff2);
   }
   
   @font-face {

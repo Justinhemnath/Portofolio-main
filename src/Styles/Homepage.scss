@@ -2,6 +2,8 @@ $accent-green: #28b097;
 $card-grey: #2c2d33;
 $background-grey: #1C2027; 
 $ashen: rgb(226, 225, 225);
+$font-black: #32373C;
+
 
 .homepage {
 
@@ -16,14 +18,14 @@ $ashen: rgb(226, 225, 225);
     flex-direction: row;
     justify-content: space-between;
     line-height: 1.6;
-    color: black;
+    color: #32373C;
 
     .about {
 
       font-size: 2.5rem;
       min-width: 400px;
       margin: 20px 50px 0 20px;
-      font-family: SlateBold;
+      font-family: InterExtraBold;
       text-align: left;
 
       .hello {
@@ -36,7 +38,7 @@ $ashen: rgb(226, 225, 225);
       .sideline {
 
         border-left: 10px solid $accent-green;
-        height: 800px;
+        height: 700px;
         margin-right: 40px;
         float: left;
         
@@ -57,12 +59,13 @@ $ashen: rgb(226, 225, 225);
       margin-top: 10px;
       min-width: 700px;
       text-align: justify;
+      color: $font-black;
 
       p {
 
-        font-size: 1.8rem;
-        font-family: Slate;
-        letter-spacing: 1.5px;
+        font-size: 1.5rem;
+        font-family: InterReg;
+        letter-spacing: 1px;
 
       }
 
@@ -95,6 +98,8 @@ $ashen: rgb(226, 225, 225);
       line-height: 1.6;
       text-align: justify;
       text-justify: inter-word;
+      color: $font-black;
+
       
       h1 {
 
@@ -124,7 +129,7 @@ $ashen: rgb(226, 225, 225);
       font-size: 4rem;
       text-decoration: underline $accent-green;
       font-family: SlateBold;
-      color: black;
+      color: $font-black;
       letter-spacing: 10px;
       
       
@@ -223,7 +228,7 @@ $ashen: rgb(226, 225, 225);
 
         .sideline {
 
-          height: 800px;
+          height: 700px;
 
         }
       }

@@ -34,8 +34,8 @@ const Homepage = () => {
                 className="fa-solid fa-angles-right fa-beat"
                 style={{ marginRight: "20px" }}
               ></i>
-              This portfolio is powered by React Js, SASS and Framer
-              motion. Scroll down to view more information.
+              Made using React Js, SASS, and Framer
+              motion.
             </p>
 
             <p>
@@ -43,7 +43,7 @@ const Homepage = () => {
                 className="fa-solid fa-angles-right fa-beat"
                 style={{ marginRight: "20px" }}
               ></i>
-              Please take a look at my Javascript 
+              Please have a look at my Javascript 
               and React Js projects under the projects tab.
             </p>
 
@@ -53,7 +53,6 @@ const Homepage = () => {
                 style={{ marginRight: "20px" }}
               ></i>
               This portfolio is also responsive. 
-              Resize the window to see the effects.
             </p>
 
           </div>

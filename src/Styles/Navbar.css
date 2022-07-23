@@ -11,7 +11,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 7vh;
-  font-family: 'Open sans', sans-serif;
+  font-family: InterReg, sans-serif;
   font-size: 1.5rem;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.25);
@@ -26,7 +26,7 @@
 .navbar .nav-link {
   padding: 4vh 2vw;
   text-decoration: none;
-  color: black;
+  color: #32373C;
   letter-spacing: 4px;
   background-color: #28b097;
   border-right: 1px solid black;
@@ -34,11 +34,12 @@
 
 .navbar .nav-link:hover {
   background-color: #f1f5f9;
-  color: black;
   padding: 4vh 2vw;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s linear, border 0.3s linear, color 0.1s ease;
-  transition: background-color 0.3s linear, border 0.3s linear, color 0.1s ease;
+  -webkit-transition: background-color 0.3s linear, border 0.3s linear,
+ color 0.1s ease;
+  transition: background-color 0.3s linear, border 0.3s linear,
+ color 0.1s ease;
 }
 
 .navbar .active-link {
@@ -47,8 +48,10 @@
   text-decoration: none;
   padding: 4vh 2vw;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s linear, border 0.3s linear, color 0.1s ease;
-  transition: background-color 0.3s linear, border 0.3s linear, color 0.1s ease;
+  -webkit-transition: background-color 0.3s linear, border 0.3s linear,
+ color 0.1s ease;
+  transition: background-color 0.3s linear, border 0.3s linear,
+ color 0.1s ease;
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
